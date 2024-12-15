@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quit Smoking Support Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Chatbot area */
+        .chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+        }
+
+        .chatbot-header {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .question-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .question-item {
+            background-color: #f0f0f0;
+            margin: 10px 0;
+            padding: 12px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .question-item:hover {
+            background-color: #d9f7d9;
+        }
+
+        .answer-box {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e6f7ff;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#info">Info</a></li>
+				<li><a href="#resources">Resources</a></li>
+				<li><a href="#experts">Experts</a></li>
+				<li><a href="#community">Community</a></li>
+				<li><a href="#blog">Blog</a></li>
+			</ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section id="home">
+            <h1>Welcome to the Quit Smoking Support Website</h1>
+            <p>Providing professional information, resources, and expert consultation to help you quit smoking successfully.</p>
+            <img src="images/quit-smoking.jpg" alt="Quit Smoking Image" class="home-image">
+            <div class="welcome-message">
+                <p>Quit smoking, change your life, start today!</p>
+            </div>
+        </section>
+
+        <!-- Quit Smoking Information -->
+        <section id="info">
+            <h2>Quit Smoking Information</h2>
+            <div class="info-item">
+                <h3>Benefits of Quitting Smoking</h3>
+                <ul>
+                    <li class="lang-info-benefits">
+                        <strong>Improved Heart and Lung Function</strong>
+                        <p>Quitting smoking reduces the burden on the heart and blood vessels, improves circulation, lowers blood pressure, and reduces the risk of heart disease and stroke.</p>
+                    </li>
+                    <li class="lang-info-benefits">
+                        <strong>Reduced Cancer Risk</strong>
+                        <p>Smoking is the leading cause of many cancers. Quitting smoking reduces the risk of lung cancer, oral cancer, throat cancer, and other smoking-related cancers.</p>
+                    </li>
+                    <li class="lang-info-benefits">
+                        <strong>Improved Skin Condition</strong>
+                        <p>Smoking accelerates skin aging, causing wrinkles and dull skin tone. After quitting smoking, the skin has a chance to recover, improving texture and color.</p>
+                    </li>
+                    <li class="lang-info-benefits">
+                        <strong>Save Money</strong>
+                        <p>Smoking is an expensive habit. After quitting, you can save a significant amount of money each year, which can be used for other healthy activities or your favorite hobbies.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info-item">
+                <h3>Methods to Quit Smoking</h3>
+                <p>There are various methods to quit smoking. Choose the one that best suits you. Here are some common methods:</p>
+                <ul>
+                    <li>Cold Turkey Method: Quit all at once, stop smoking immediately.</li>
+                    <li>Gradual Reduction Method: Gradually reduce smoking each day until quitting.</li>
+                    <li>Medication-Assisted Method: Use medications to help reduce withdrawal symptoms.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources Download -->
+        <section id="resources">
+            <h2>Resources Download</h2>
+            <ul>
+                <li><a href="resources/Quit-Smoking-Diary.pdf" download>Quit Smoking Diary Template</a></li>
+                <li><a href="resources/Quit-Smoking-Action-Plan.pdf" download>Quit Smoking Action Plan Template</a></li>
+                <li><a href="resources/Quit-Smoking-Brochure.pdf" download>Quit Smoking Brochure</a></li>
+                <li><a href="resources/Success-Stories.pdf" download>Success Stories</a></li>
+            </ul>
+        </section>
+
+        <!-- Expert Consultation -->
+        <section id="experts">
+            <h2>Expert Consultation</h2>
+            <p>If you have any questions, please fill out the form below to contact our smoking cessation experts.</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <!-- Community Support -->
+        <section id="community">
+            <h2>Community Support</h2>
+            <p>Join our smoking cessation community to share experiences and receive support from others who are also quitting smoking.</p>
+            <div class="forum">
+                <h3>Latest Discussions</h3>
+                <ul>
+                    <li><a href="#">How to Overcome Anxiety During the Quitting Process?</a></li>
+                    <li><a href="#">Psychological Changes After Quitting Smoking</a></li>
+                    <li><a href="#">Best Methods for Successful Smoking Cessation</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Latest Articles -->
+        <section id="blog">
+            <h2>Latest Articles</h2>
+            <div class="blog-post">
+                <h3><a href="#">How to Quit Smoking Successfully: Expert Advice</a></h3>
+                <p>This article shares expert advice to help you choose the best quitting method for you...</p>
+            </div>
+
+            <div class="blog-post">
+                <h3><a href="#">Common Challenges During the Quit Smoking Process</a></h3>
+                <p>Many people face various challenges during the quitting process, this article helps you understand how to deal with them...</p>
+            </div>
+        </section>
+    </main>
+	
+	<!-- Chatbot -->
+    <div class="chatbot">
+        <div class="chatbot-header">Quit Smoking Assistant</div>
+        <ul class="question-list">
+            <li class="question-item" onclick="showAnswer(1)">1. What are the benefits of quitting smoking?</li>
+            <li class="question-item" onclick="showAnswer(2)">2. How to quit smoking successfully?</li>
+            <li class="question-item" onclick="showAnswer(3)">3. What are the dangers of e-cigarettes?</li>
+            <li class="question-item" onclick="showAnswer(4)">4. What are the common challenges during the quitting process?</li>
+            <li class="question-item" onclick="showAnswer(5)">5. What are some effective methods to quit smoking?</li>
+            <li class="question-item" onclick="showAnswer(6)">6. How to find smoking cessation support resources?</li>
+            <li class="question-item" onclick="showAnswer(7)">7. What health improvements can be expected after quitting smoking?</li>
+            <li class="question-item" onclick="showAnswer(8)">8. How to maintain motivation to quit smoking?</li>
+        </ul>
+
+        <div class="answer-box" id="answer-1">
+            <p>There are many health benefits to quitting smoking, including improved heart and lung function, reduced cancer risk, and improved skin condition.</p>
+        </div>
+        <div class="answer-box" id="answer-2">
+            <p>Successful smoking cessation requires determination, a plan, and support. Common methods include cold turkey, gradual reduction, and medication-assisted methods.</p>
+        </div>
+        <div class="answer-box" id="answer-3">
+            <p>Although e-cigarettes may be less harmful, they still contain nicotine and may affect the heart and lungs.</p>
+        </div>
+        <div class="answer-box" id="answer-4">
+            <p>Common challenges include withdrawal symptoms and emotional fluctuations, but they can be overcome with the right strategies.</p>
+        </div>
+        <div class="answer-box" id="answer-5">
+            <p>There are many methods to quit smoking. Choose the one that works best for you. You can seek advice from a doctor or a support group.</p>
+        </div>
+        <div class="answer-box" id="answer-6">
+            <p>You can find support resources by searching online or contacting professional organizations.</p>
+        </div>
+        <div class="answer-box" id="answer-7">
+            <p>After quitting smoking, health improvements are significant, such as easier breathing, and better heart and lung health.</p>
+        </div>
+        <div class="answer-box" id="answer-8">
+            <p>Maintaining motivation involves setting goals, tracking progress, and receiving support.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Quit Smoking Support Website. All rights reserved.</p>
+    </footer>
+	
+	<script>
+        // Show answer when clicking on a question
+        function showAnswer(id) {
+            const answerBoxes = document.querySelectorAll('.answer-box');
+            answerBoxes.forEach(box => {
+                box.style.display = 'none';
+            });
+            document.getElementById('answer-' + id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
